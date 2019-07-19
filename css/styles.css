@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.bgimage {
+  width:100%;
+  height:90%;
+  max-height: 800px;
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.267), black), url('/img/sample1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  /* background-attachment: fixed; */
+}
+
+.bg-grad {
+  background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 198, 77));
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: rgb(255, 198, 77) !important;
+}
+
+
+/* ------------------------------------------get wavy */
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 20px;
+  max-height: 20px;
+  margin: 0;
+  z-index:5;
+  float:left;
+}
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
