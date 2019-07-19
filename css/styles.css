@@ -23,6 +23,29 @@ html, body {
   color: rgb(255, 198, 77) !important;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero:after {
+  border-right: solid 50px transparent;
+  border-left: solid 50px transparent;
+  border-top: solid 50px #000000;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1;
+  content: '';
+  top: 100%;
+  left: 50%;
+  height: 0;
+  width: 0;
+}
+
+.list-group-item {
+ padding: 0 0 0 0;
+ padding-left: 1em;
+}
+
 
 /* ------------------------------------------get wavy */
 
