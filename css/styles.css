@@ -47,7 +47,7 @@ html, body {
 }
 
 
-/* ------------------------------------------get wavy */
+/* ----------------------------------------- get wavy */
 
 .editorial {
   display: block;
@@ -118,11 +118,7 @@ html, body {
 
 /* -------------------------gallery */
 
-@media only screen and (max-width: $break-small) {
-  .display-container {
-    width: 100%;
-  }
-}
+
 
 .display {
   display: grid;
