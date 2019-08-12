@@ -27,6 +27,10 @@ html, body {
   position: relative;
 }
 
+.highlight {
+ color: rgb(255, 193, 7);
+}
+
 /* .hero:after {
   border-right: solid 50px transparent;
   border-left: solid 50px transparent;
