@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GRIP 4WD Rentals</title>
-  <meta name="description" content="Specialists in 4WD Campers. New model Nissan Navaras, outfitted with everything you need for an amazing 4WD adventure. Now hiring all around Australia!" >
+  <meta name="description" content="Specialists in 4WD Campers. New model Nissan Navaras, outfitted with everything you need for an amazing 4WD adventure. Now hiring all around Australia!">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -77,15 +77,15 @@
           <h2 class="display-4 text-left text-sm-right mb-4 mb-sm-2" style="font-size: 2.5rem">Get into a new <span class="font-weight-bold highlight">GRIP 4WD</span> Camper</h2>
         </div>
         <div class="col-12 col-sm-8 text-justify">
-          <p class="lead">Grip 4WD's are outfitted with all the gear you need for an awesome camper experience. Sporting a tough exterior and spacious interior with all the comforts and safety features you would expect from a premium 4WD.</p>        
-        </div>      
+          <p class="lead">Grip 4WD's are outfitted with all the gear you need for an awesome camper experience. Sporting a tough exterior and spacious interior with all the comforts and safety features you would expect from a premium 4WD.</p>
+        </div>
       </div>
       <div class="container">
         <div class="col-12">
           <p class="lead">Travel and camp in style in a new model Nissan Navara, with two easy-to-open foldout rooftop tents, and bring the luxury with you with a shower, fridge/freezer and a kitchenette complete with gas cooker and all the accessories you need.</p>
         </div>
       </div>
-      
+
     </section>
 
 
@@ -198,11 +198,11 @@
 
     <div class="mx-auto" style="max-width: 1200px; padding: 0 15px">
       <div class="video-container">
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/Xu3jmniJxnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/Xu3jmniJxnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-    </div>
-    
-    
+
+
 
     <section>
       <div class="container my-5">
@@ -241,43 +241,23 @@
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
-  <script scr="scripts/scripts.js"></script>
   <script>
-  $(function () {
-  console.log('fuck')
-  var lastScrollTop = 0;
-  var $navbar = $('.navbar');
+    $(function () {
+      console.log('fuck')
+      var lastScrollTop = 0;
+      var $navbar = $('.navbar');
 
-  $(window).scroll(function(event){
-    var st = $(this).scrollTop();
-
-    if (st > lastScrollTop) { // scroll down
-      
-      // use this is jQuery full is used
-      $navbar.fadeOut()
-      
-      // use this to use CSS3 animation
-      // $navbar.addClass("fade-out");
-      // $navbar.removeClass("fade-in");
-      
-      // use this if no effect is required
-      // $navbar.hide();
-    } else { // scroll up
-      
-      // use this is jQuery full is used
-      $navbar.fadeIn()
-      
-      // use this to use CSS3 animation
-      // $navbar.addClass("fade-in");
-      // $navbar.removeClass("fade-out");
-      
-      // use this if no effect is required
-      // $navbar.show();
-    }
-    lastScrollTop = st;
-  });
-});
-</script>
+      $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) { // scroll down     
+          $navbar.fadeOut()
+        } else { // scroll up
+          $navbar.fadeIn()
+        }
+        lastScrollTop = st;
+      });
+    });
+  </script>
 </body>
 
 </html>
