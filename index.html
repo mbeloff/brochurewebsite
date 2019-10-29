@@ -18,17 +18,13 @@
   <!-- custom styles -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- jQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
     <a class="navbar-brand" href="#">GRIP 4WD</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -239,8 +235,49 @@
     </section>
 
   </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
   <script scr="scripts/scripts.js"></script>
+  <script>
+  $(function () {
+  console.log('fuck')
+  var lastScrollTop = 0;
+  var $navbar = $('.navbar');
+
+  $(window).scroll(function(event){
+    var st = $(this).scrollTop();
+
+    if (st > lastScrollTop) { // scroll down
+      
+      // use this is jQuery full is used
+      $navbar.fadeOut()
+      
+      // use this to use CSS3 animation
+      // $navbar.addClass("fade-out");
+      // $navbar.removeClass("fade-in");
+      
+      // use this if no effect is required
+      // $navbar.hide();
+    } else { // scroll up
+      
+      // use this is jQuery full is used
+      $navbar.fadeIn()
+      
+      // use this to use CSS3 animation
+      // $navbar.addClass("fade-in");
+      // $navbar.removeClass("fade-out");
+      
+      // use this if no effect is required
+      // $navbar.show();
+    }
+    lastScrollTop = st;
+  });
+});
+</script>
 </body>
 
 </html>
