@@ -27,6 +27,14 @@ html, body {
   position: relative;
 }
 
+.logo-img {
+  max-width: 150px;
+}
+
+.hero-title {
+  font-size: 2em;
+}
+
 .highlight {
  color: rgb(255, 193, 7);
 }
