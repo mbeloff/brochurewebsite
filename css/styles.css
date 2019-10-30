@@ -124,7 +124,7 @@ html, body {
 
 .display {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   grid-gap: 1rem;
 }
 
@@ -137,7 +137,7 @@ html, body {
 
 .display2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 1rem;
 }
 .display-item2 {
@@ -148,7 +148,7 @@ html, body {
 }
 
 .display-item:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
 .display-image {
@@ -160,7 +160,7 @@ html, body {
 }
 
 .display-image:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .video-container {
