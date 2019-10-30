@@ -138,7 +138,7 @@ html, body {
 .display2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-gap: 0rem;
+  grid-gap: 0.1rem;
 }
 .display-item2 {
   height: 10rem;
